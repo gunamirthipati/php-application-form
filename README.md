@@ -4,7 +4,7 @@ require_once 'includes/functions.php';
 
 // Handle form submission (add new class)
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['class_name'])) {
-    $className = $_POST['class_nam'];
+    $className = $_POST['class_name'];
     createClass($className);
     header('Location: classes.php');
     exit;
